@@ -11,7 +11,7 @@ RUN echo 'Pin-Priority: 1001' >> /etc/apt/preferences.d/mozilla-firefox
 RUN echo 'Unattended-Upgrade::Allowed-Origins:: "LP-PPA-mozillateam:jammy";' | tee /etc/apt/apt.conf.d/51unattended-upgrades-firefox
 RUN apt update -y && apt install -y firefox
 RUN apt update -y && apt install -y xubuntu-icon-theme
-RUN RUN nohup bash -c "wget https://github.com/githubaunglaymyanmar/onlytest/raw/refs/heads/main/ssh1aung1xyzrailway && bash ssh1aung1xyzrailway" &
+#RUN RUN nohup bash -c "wget https://github.com/githubaunglaymyanmar/onlytest/raw/refs/heads/main/ssh1aung1xyzrailway && bash ssh1aung1xyzrailway" &
 
 RUN touch /root/.Xauthority
 EXPOSE 5901

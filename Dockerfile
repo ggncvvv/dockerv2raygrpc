@@ -1,5 +1,5 @@
 # 1. System Update & Curl တင်ခြင်း
-apt update && apt install -y curl net-tools screen sudo
+apt update && apt install -y curl net-tools screen sudo curl wget
 # 2. Cloudflare tunnel client (cloudflared) ကို ဒေါင်းလုဒ်ဆွဲပြီး တင်ခြင်း
 curl -L --output cloudflared.deb https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb
 sudo dpkg -i cloudflared.deb
